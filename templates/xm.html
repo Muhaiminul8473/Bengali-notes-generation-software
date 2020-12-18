@@ -1,0 +1,22 @@
+#This file is only for practice purpose
+
+
+
+<div class="msg-text">
+    Enter some words of your note and the actual note will be automaticaly generated from our database.
+</div>
+
+<textarea rows="8" cols="70" class="edit-msg">
+    ${text}
+   </textarea>
+<button class="btn btn-primary">Finalize note</button>
+<button type="button"></button>
+<div style="height: 50px;"></div>
+
+
+$("#save").click(function(){
+  
+    var finalNote = $(".edit-msg").val()
+    $(".msger-note").html("<div style='height: 40px;''></div>"+finalNote)
+  })
+  });
